@@ -46,9 +46,7 @@ def plot_tmy(data, output_dir):
         radiation_values_ir.append(entry["IR(h)"])
 
     fig, axs = plt.subplots(2, 2, figsize=(12, 10))
-    axs[0, 0].hist(
-        time, bins=len(time), weights=radiation_values_gh, color="b", label="Global"
-    )
+    axs[0, 0].bar(time, radiation_values_gh, color="b", label="Global")
     axs[0, 0].set_title("Global Irradiation [G(h)]")
     axs[0, 0].set_xlabel("Timestamp/Hour")
     axs[0, 0].set_ylabel("Irradiation (W/m²)")
@@ -60,9 +58,7 @@ def plot_tmy(data, output_dir):
         [entry["time(UTC)"][4:] for entry in data["outputs"]["tmy_hourly"][::438]]
     )
 
-    axs[0, 1].hist(
-        time, bins=len(time), weights=radiation_values_gb, color="g", label="Direct"
-    )
+    axs[0, 1].bar(time, radiation_values_gb, color="g", label="Direct")
     axs[0, 1].set_title("Direct Irradiation [Gb(n)]")
     axs[0, 1].set_xlabel("Timestamp/Hour")
     axs[0, 1].set_ylabel("Irradiation (W/m²)")
@@ -73,9 +69,7 @@ def plot_tmy(data, output_dir):
         [entry["time(UTC)"][4:] for entry in data["outputs"]["tmy_hourly"][::438]]
     )
 
-    axs[1, 0].hist(
-        time, bins=len(time), weights=radiation_values_gd, color="r", label="Diffuse"
-    )
+    axs[1, 0].bar(time, radiation_values_gd, color="r", label="Diffuse")
     axs[1, 0].set_title("Diffuse Irradiation [Gd(h)]")
     axs[1, 0].set_xlabel("Timestamp/Hour")
     axs[1, 0].set_ylabel("Irradiation (W/m²)")
@@ -86,9 +80,7 @@ def plot_tmy(data, output_dir):
         [entry["time(UTC)"][4:] for entry in data["outputs"]["tmy_hourly"][::438]]
     )
 
-    axs[1, 1].hist(
-        time, bins=len(time), weights=radiation_values_ir, color="y", label="IR"
-    )
+    axs[1, 1].bar(time, radiation_values_ir, color="y", label="IR")
     axs[1, 1].set_title("IR Irradiation [IR(h)]")
     axs[1, 1].set_xlabel("Timestamp/Hour")
     axs[1, 1].set_ylabel("Irradiation (W/m²)")
