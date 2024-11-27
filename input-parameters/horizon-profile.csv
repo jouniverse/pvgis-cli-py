@@ -1,0 +1,6 @@
+Name,Type,Obligatory,Default,Comments
+lat,F,Yes,-,"Latitude, in decimal degrees, south is negative."
+lon,F,Yes,-,"Longitude, in decimal degrees, west is negative."
+userhorizon,L,No,-,"Height of the horizon at equidistant directions around the point of interest, in degrees. Starting at north and moving clockwise. The series '0,10,20,30,40,15,25,5' would mean the horizon height is 0° due north, 10° for north-east, 20° for east, 30° for south-east, etc."
+outputformat,T,No,"csv","Type of output. Choices are: 'csv' for the normal csv output with text explanations, 'basic' to get only the data output with no text, and 'json'."
+browser,I,No,0,"Use this with a value of '1' if you access the web service from a web browser and want to save the data to a file."

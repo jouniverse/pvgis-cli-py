@@ -1,0 +1,284 @@
+{
+  "inputs": {
+    "location": {
+      "latitude": 45,
+      "longitude": 8,
+      "elevation": 250
+    },
+    "meteo_data": {
+      "radiation_db": "PVGIS-SARAH3",
+      "meteo_db": "ERA5",
+      "year_min": 2005,
+      "year_max": 2023,
+      "use_horizon": true,
+      "horizon_db": "DEM-calculated"
+    },
+    "plane": {
+      "fixed": {
+        "slope": {
+          "value": 0,
+          "optimal": false
+        },
+        "azimuth": {
+          "value": 0,
+          "optimal": false
+        }
+      }
+    },
+    "time_format": "UTC"
+  },
+  "outputs": {
+    "daily_profile": [
+      {
+        "month": 3,
+        "time": "00:00",
+        "G(i)": 0,
+        "Gb(i)": 0,
+        "Gd(i)": 0
+      },
+      {
+        "month": 3,
+        "time": "01:00",
+        "G(i)": 0,
+        "Gb(i)": 0,
+        "Gd(i)": 0
+      },
+      {
+        "month": 3,
+        "time": "02:00",
+        "G(i)": 0,
+        "Gb(i)": 0,
+        "Gd(i)": 0
+      },
+      {
+        "month": 3,
+        "time": "03:00",
+        "G(i)": 0,
+        "Gb(i)": 0,
+        "Gd(i)": 0
+      },
+      {
+        "month": 3,
+        "time": "04:00",
+        "G(i)": 0,
+        "Gb(i)": 0,
+        "Gd(i)": 0
+      },
+      {
+        "month": 3,
+        "time": "05:00",
+        "G(i)": 0,
+        "Gb(i)": 0,
+        "Gd(i)": 0
+      },
+      {
+        "month": 3,
+        "time": "06:00",
+        "G(i)": 34.64,
+        "Gb(i)": 12.74,
+        "Gd(i)": 21.9
+      },
+      {
+        "month": 3,
+        "time": "07:00",
+        "G(i)": 158.08,
+        "Gb(i)": 77.68,
+        "Gd(i)": 80.4
+      },
+      {
+        "month": 3,
+        "time": "08:00",
+        "G(i)": 292.63,
+        "Gb(i)": 167.86,
+        "Gd(i)": 124.77
+      },
+      {
+        "month": 3,
+        "time": "09:00",
+        "G(i)": 406.13,
+        "Gb(i)": 252.61,
+        "Gd(i)": 153.52
+      },
+      {
+        "month": 3,
+        "time": "10:00",
+        "G(i)": 491.03,
+        "Gb(i)": 314.84,
+        "Gd(i)": 176.19
+      },
+      {
+        "month": 3,
+        "time": "11:00",
+        "G(i)": 529.54,
+        "Gb(i)": 341.69,
+        "Gd(i)": 187.84
+      },
+      {
+        "month": 3,
+        "time": "12:00",
+        "G(i)": 516.94,
+        "Gb(i)": 336.57,
+        "Gd(i)": 180.37
+      },
+      {
+        "month": 3,
+        "time": "13:00",
+        "G(i)": 485.76,
+        "Gb(i)": 310.8,
+        "Gd(i)": 174.96
+      },
+      {
+        "month": 3,
+        "time": "14:00",
+        "G(i)": 404.44,
+        "Gb(i)": 251.24,
+        "Gd(i)": 153.2
+      },
+      {
+        "month": 3,
+        "time": "15:00",
+        "G(i)": 292.53,
+        "Gb(i)": 171.84,
+        "Gd(i)": 120.69
+      },
+      {
+        "month": 3,
+        "time": "16:00",
+        "G(i)": 159.28,
+        "Gb(i)": 82.78,
+        "Gd(i)": 76.5
+      },
+      {
+        "month": 3,
+        "time": "17:00",
+        "G(i)": 24.56,
+        "Gb(i)": 8.86,
+        "Gd(i)": 15.71
+      },
+      {
+        "month": 3,
+        "time": "18:00",
+        "G(i)": 0,
+        "Gb(i)": 0,
+        "Gd(i)": 0
+      },
+      {
+        "month": 3,
+        "time": "19:00",
+        "G(i)": 0,
+        "Gb(i)": 0,
+        "Gd(i)": 0
+      },
+      {
+        "month": 3,
+        "time": "20:00",
+        "G(i)": 0,
+        "Gb(i)": 0,
+        "Gd(i)": 0
+      },
+      {
+        "month": 3,
+        "time": "21:00",
+        "G(i)": 0,
+        "Gb(i)": 0,
+        "Gd(i)": 0
+      },
+      {
+        "month": 3,
+        "time": "22:00",
+        "G(i)": 0,
+        "Gb(i)": 0,
+        "Gd(i)": 0
+      },
+      {
+        "month": 3,
+        "time": "23:00",
+        "G(i)": 0,
+        "Gb(i)": 0,
+        "Gd(i)": 0
+      }
+    ]
+  },
+  "meta": {
+    "inputs": {
+      "location": {
+        "description": "Selected location",
+        "variables": {
+          "latitude": {
+            "description": "Latitude",
+            "units": "decimal degree"
+          },
+          "longitude": {
+            "description": "Longitude",
+            "units": "decimal degree"
+          },
+          "elevation": {
+            "description": "Elevation",
+            "units": "m"
+          }
+        }
+      },
+      "meteo_data": {
+        "description": "Sources of meteorological data",
+        "variables": {
+          "radiation_db": {
+            "description": "Solar radiation database"
+          },
+          "meteo_db": {
+            "description": "Database used for meteorological variables other than solar radiation"
+          },
+          "year_min": {
+            "description": "First year of the calculations"
+          },
+          "year_max": {
+            "description": "Last year of the calculations"
+          },
+          "use_horizon": {
+            "description": "Include horizon shadows"
+          },
+          "horizon_db": {
+            "description": "Source of horizon data"
+          }
+        }
+      },
+      "plane": {
+        "description": "plane",
+        "fields": {
+          "slope": {
+            "description": "Inclination angle from the horizontal plane",
+            "units": "degree"
+          },
+          "azimuth": {
+            "description": "Orientation (azimuth) angle of the (fixed) PV system (0 = S, 90 = W, -90 = E)",
+            "units": "degree"
+          }
+        }
+      },
+      "time_format": [
+        {
+          "description": "Local or UTC"
+        }
+      ]
+    },
+    "outputs": {
+      "daily_profile": {
+        "type": "time series",
+        "timestamp": "hourly",
+        "variables": {
+          "G(i)": {
+            "description": " Global irradiance on a fixed plane",
+            "units": "W/m2"
+          },
+          "Gb(i)": {
+            "description": "Direct irradiance on a fixed plane",
+            "units": "W/m2"
+          },
+          "Gd(i)": {
+            "description": "Diffuse irradiance on a fixed plane",
+            "units": "W/m2"
+          }
+        }
+      }
+    }
+  }
+}
